@@ -37,6 +37,10 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>
 
+    {% if page.highlighted %}
+      {{ page.highlighted }}
+    {% endif %}
+
     {% if page.breadcrumb %}
       {{ page.breadcrumb }}
     {% endif %}

@@ -28,8 +28,8 @@
     <div style="background-color: var(--card); border-radius: var(--radius-card); box-shadow: var(--elevation-sm); border: 1px solid var(--border); padding: 2rem;">
       
       {# Messages #}
-      {% if messages %}
-        {{ messages }}
+      {% if page.highlighted %}
+        {{ page.highlighted }}
       {% endif %}
 
       {# Form Content #}

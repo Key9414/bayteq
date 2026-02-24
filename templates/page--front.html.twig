@@ -32,6 +32,10 @@
 
   <main role="main">
 
+    {% if page.highlighted %}
+      {{ page.highlighted }}
+    {% endif %}
+
     {# Hero Section #}
     <section style="position: relative; background-color: var(--primary); color: var(--primary-foreground); overflow: hidden;">
       <div style="position: relative; padding: 4rem 1.5rem;">
