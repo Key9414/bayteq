@@ -1,11 +1,13 @@
 name: 'Bayteq Developer Portal'
 type: theme
 description: 'Tema personalizado para el Portal de Desarrolladores de Bayteq'
-core_version_requirement: ^11
+core_version_requirement: ^10 || ^11
+base theme: false
 package: Custom
 version: 1.0.0
 
 regions:
+  highlighted: 'Highlighted'
   header: 'Header'
   primary_menu: 'Primary menu'
   breadcrumb: 'Breadcrumb'
