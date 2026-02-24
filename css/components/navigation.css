@@ -3,6 +3,47 @@
  * Estilos de navegación del Portal Bayteq
  */
 
+/* -------------------------------------------------------
+ * Drupal menu output: .bayteq-nav-menu > nav > ul.menu
+ * ------------------------------------------------------- */
+.bayteq-nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.bayteq-nav-menu nav {
+  display: flex;
+  align-items: center;
+}
+
+.bayteq-nav-menu ul.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bayteq-nav-menu .menu-item a {
+  font-family: var(--font-family-source);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-normal);
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.bayteq-nav-menu .menu-item a:hover,
+.bayteq-nav-menu .menu-item a.is-active,
+.bayteq-nav-menu .menu-item--active-trail > a {
+  color: var(--accent-red);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* -------------------------------------------------------
+ * Top Navigation (clase manual, se mantiene por compatibilidad)
+ * ------------------------------------------------------- */
 /* Top Navigation */
 .top-navigation {
   background-color: var(--card);

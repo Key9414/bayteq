@@ -6,33 +6,31 @@
 #}
 <div class="layout-container">
   
-  {% if page.header %}
-    <header role="banner" style="background-color: var(--card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100;">
-      <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 4rem;">
-        
-        <div style="display: flex; align-items: center; gap: 0.75rem;">
-          {% if site_logo %}
-            <a href="{{ path('<front>') }}">
-              <img src="{{ site_logo }}" alt="{{ site_name }}" style="height: 2rem;">
-            </a>
-          {% endif %}
-          {% if site_name %}
-            <a href="{{ path('<front>') }}" style="font-family: var(--font-family-oswald); font-size: var(--text-h3); font-weight: var(--font-weight-semibold); color: var(--foreground); text-decoration: none;">
-              {{ site_name }}
-            </a>
-          {% endif %}
-        </div>
+  <header role="banner" style="background-color: var(--card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 4rem;">
 
-        <nav style="display: flex; gap: 2rem;">
-          <a href="/home" style="font-family: var(--font-family-source); font-size: var(--text-base); color: var(--foreground); text-decoration: none;">Inicio</a>
-          <a href="/apis" style="font-family: var(--font-family-source); font-size: var(--text-base); color: var(--foreground); text-decoration: none;">APIs</a>
-          <a href="/docs" style="font-family: var(--font-family-source); font-size: var(--text-base); color: var(--foreground); text-decoration: none;">Docs</a>
-        </nav>
-
-        {{ page.header }}
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        {% if site_logo %}
+          <a href="{{ path('<front>') }}">
+            <img src="{{ site_logo }}" alt="{{ site_name }}" style="height: 2rem;">
+          </a>
+        {% endif %}
+        {% if site_name %}
+          <a href="{{ path('<front>') }}" style="font-family: var(--font-family-oswald); font-size: var(--text-h3); font-weight: var(--font-weight-semibold); color: var(--foreground); text-decoration: none;">
+            {{ site_name }}
+          </a>
+        {% endif %}
       </div>
-    </header>
-  {% endif %}
+
+      <div class="bayteq-nav-menu">
+        {{ page.primary_menu }}
+      </div>
+
+      {% if page.header %}
+        {{ page.header }}
+      {% endif %}
+    </div>
+  </header>
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" width="140" height="40" role="img" aria-label="Bayteq">
+  <!-- Icon block -->
+  <rect x="0" y="4" width="32" height="32" rx="6" fill="#233F50"/>
+  <text x="7" y="27" font-family="sans-serif" font-size="20" font-weight="700" fill="#D14836">B</text>
+  <!-- Wordmark -->
+  <text x="40" y="29" font-family="sans-serif" font-size="22" font-weight="600" fill="#233F50" letter-spacing="-0.5">bayteq</text>
+</svg>
